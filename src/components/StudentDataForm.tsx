@@ -131,9 +131,9 @@ export const StudentDataForm: React.FC<StudentDataFormProps> = ({ onSubmit, isLo
   return (
     <Card className="w-full max-w-4xl mx-auto shadow-card">
       <CardHeader className="text-center bg-gradient-academic text-primary-foreground rounded-t-lg">
-        <CardTitle className="text-2xl font-bold flex items-center justify-center gap-2">
-          <GraduationCap className="h-6 w-6" />
-          CS Academic Performance Predictor
+        <CardTitle className="text-1xl font-bold flex items-center justify-center gap-2">
+          <GraduationCap className="h-4 w-4" />
+           A Development of Predictiong student academic performance using decision tree Algorithm
         </CardTitle>
         <CardDescription className="text-primary-foreground/80">
           Enter student data to predict academic performance using machine learning

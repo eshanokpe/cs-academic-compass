@@ -49,9 +49,9 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 bg-gradient-academic bg-clip-text text-transparent">
-            CS Academic Compass
-          </h1>
+          <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4 bg-gradient-academic bg-clip-text text-transparent">
+            A Development of Predictiong student academic performance using decision tree Algorithm
+          </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Advanced machine learning prediction system for computer science student academic performance using decision tree algorithms
           </p>
@@ -116,7 +116,7 @@ const Index = () => {
 
         {/* Footer */}
         <div className="mt-16 text-center text-sm text-muted-foreground">
-          <p>CS Academic Compass - Powered by Machine Learning Decision Trees</p>
+          <p> A Development of Predictiong student academic performance using decision tree Algorithm - Powered by Machine Learning Decision Trees</p>
           <p className="mt-1">Helping students achieve academic excellence through data-driven insights</p>
         </div>
       </div>
