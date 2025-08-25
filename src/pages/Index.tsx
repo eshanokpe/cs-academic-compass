@@ -49,7 +49,7 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4 bg-gradient-academic bg-clip-text text-transparent">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
             A Development of Predictiong student academic performance using decision tree Algorithm
           </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -58,7 +58,7 @@ const Index = () => {
         </div>
 
         {/* Feature Cards */}
-        {!prediction && (
+        {/* {!prediction && (
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
             <Card className="text-center shadow-card hover:shadow-academic transition-all duration-300">
               <CardContent className="p-4">
@@ -92,7 +92,7 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-        )}
+        )} */}
 
         {/* Main Content */}
         {!prediction ? (
@@ -101,12 +101,12 @@ const Index = () => {
           <div className="space-y-6">
             <PredictionResults result={prediction} />
             
-            <div className="text-center">
+            <div className="text-center ">
               <Button 
                 onClick={resetPrediction}
                 variant="outline"
                 size="lg"
-                className="min-w-48"
+                className="min-w-48 "
               >
                 Analyze Another Student
               </Button>
@@ -115,10 +115,10 @@ const Index = () => {
         )}
 
         {/* Footer */}
-        <div className="mt-16 text-center text-sm text-muted-foreground">
+        {/* <div className="mt-16 text-center text-sm text-muted-foreground">
           <p> A Development of Predictiong student academic performance using decision tree Algorithm - Powered by Machine Learning Decision Trees</p>
           <p className="mt-1">Helping students achieve academic excellence through data-driven insights</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

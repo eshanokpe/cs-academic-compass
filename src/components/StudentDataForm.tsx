@@ -130,7 +130,7 @@ export const StudentDataForm: React.FC<StudentDataFormProps> = ({ onSubmit, isLo
 
   return (
     <Card className="w-full max-w-4xl mx-auto shadow-card">
-      <CardHeader className="text-center bg-gradient-academic text-primary-foreground rounded-t-lg">
+      {/* <CardHeader className="text-center bg-gradient-academic text-primary-foreground rounded-t-lg">
         <CardTitle className="text-1xl font-bold flex items-center justify-center gap-2">
           <GraduationCap className="h-4 w-4" />
            A Development of Predictiong student academic performance using decision tree Algorithm
@@ -138,29 +138,44 @@ export const StudentDataForm: React.FC<StudentDataFormProps> = ({ onSubmit, isLo
         <CardDescription className="text-primary-foreground/80">
           Enter student data to predict academic performance using machine learning
         </CardDescription>
-      </CardHeader>
+      </CardHeader> */}
       
       <CardContent className="p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           <Tabs defaultValue="academic" className="w-full">
             <TabsList className="grid w-full grid-cols-5">
-              <TabsTrigger value="academic" className="flex items-center gap-1">
+              <TabsTrigger
+                value="academic"
+                className="flex items-center gap-1 px-3 py-2 rounded-t-lg font-medium text-blue-700 bg-blue-50 border-b-2 border-transparent hover:bg-blue-100 hover:text-blue-900 focus:outline-none data-[state=active]:bg-white data-[state=active]:border-blue-600 data-[state=active]:text-blue-900 transition-colors"
+              >
                 <GraduationCap className="h-4 w-4" />
                 Academic
               </TabsTrigger>
-              <TabsTrigger value="engagement" className="flex items-center gap-1">
+              <TabsTrigger
+                value="engagement"
+                className="flex items-center gap-1 px-3 py-2 rounded-t-lg font-medium text-blue-700 bg-blue-50 border-b-2 border-transparent hover:bg-blue-100 hover:text-blue-900 focus:outline-none data-[state=active]:bg-white data-[state=active]:border-blue-600 data-[state=active]:text-blue-900 transition-colors"
+              >
                 <TrendingUp className="h-4 w-4" />
                 Engagement
               </TabsTrigger>
-              <TabsTrigger value="behavioral" className="flex items-center gap-1">
+              <TabsTrigger
+                value="behavioral"
+                className="flex items-center gap-1 px-3 py-2 rounded-t-lg font-medium text-blue-700 bg-blue-50 border-b-2 border-transparent hover:bg-blue-100 hover:text-blue-900 focus:outline-none data-[state=active]:bg-white data-[state=active]:border-blue-600 data-[state=active]:text-blue-900 transition-colors"
+              >
                 <Brain className="h-4 w-4" />
                 Behavioral
               </TabsTrigger>
-              <TabsTrigger value="technical" className="flex items-center gap-1">
+              <TabsTrigger
+                value="technical"
+                className="flex items-center gap-1 px-3 py-2 rounded-t-lg font-medium text-blue-700 bg-blue-50 border-b-2 border-transparent hover:bg-blue-100 hover:text-blue-900 focus:outline-none data-[state=active]:bg-white data-[state=active]:border-blue-600 data-[state=active]:text-blue-900 transition-colors"
+              >
                 <Code className="h-4 w-4" />
                 Technical
               </TabsTrigger>
-              <TabsTrigger value="external" className="flex items-center gap-1">
+              <TabsTrigger
+                value="external"
+                className="flex items-center gap-1 px-3 py-2 rounded-t-lg font-medium text-blue-700 bg-blue-50 border-b-2 border-transparent hover:bg-blue-100 hover:text-blue-900 focus:outline-none data-[state=active]:bg-white data-[state=active]:border-blue-600 data-[state=active]:text-blue-900 transition-colors"
+              >
                 <Users className="h-4 w-4" />
                 External
               </TabsTrigger>
@@ -377,10 +392,9 @@ export const StudentDataForm: React.FC<StudentDataFormProps> = ({ onSubmit, isLo
           <div className="flex justify-center pt-6 border-t">
             <Button
               type="submit"
-              variant="academic"
               size="lg"
               disabled={isLoading}
-              className="min-w-48"
+              className="min-w-48 bg-blue-600 hover:bg-blue-700 text-white border-none"
             >
               {isLoading ? "Analyzing..." : "Predict Performance"}
             </Button>
