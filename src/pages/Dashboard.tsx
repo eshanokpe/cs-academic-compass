@@ -9,7 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { LogOut, User } from 'lucide-react';
 
-const Index = () => {
+const Dashboard = () => {
   const [prediction, setPrediction] = useState<PredictionResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
@@ -125,4 +125,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Dashboard;
